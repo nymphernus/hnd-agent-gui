@@ -1,0 +1,69 @@
+﻿@page "/libs"
+@inject HttpClient Http
+
+<PageTitle>HND Agent</PageTitle>
+
+<h1>Библиотека</h1>
+
+<div class="mb-3">
+    <button class="btn btn-primary" @onclick="RefreshDataAsync">Обновить данные</button>
+</div>
+
+@if (forecasts == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>ID книги</th>
+                <th aria-label="Title">Название книги</th>
+                <th aria-label="Author">Автор</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var forecast in forecasts)
+            {
+                <tr>
+                    <td>@forecast.Id</td>
+                    <td>@forecast.Title</td>
+                    <td>@forecast.Author</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    private BookList[]? forecasts;
+    private System.Threading.Timer? timer;
+
+    protected override void OnInitialized()
+    {
+        StartTimer(); // Начнём таймер при инициализации
+    }
+    private void StartTimer()
+    {
+        var refreshInterval = TimeSpan.FromSeconds(600); // интервал обновления каждые 600 секунд
+        timer = new Timer(async state =>
+        {
+            await InvokeAsync(() => RefreshDataAsync());
+        }, null, TimeSpan.Zero, refreshInterval);
+    }
+    private async Task RefreshDataAsync()
+    {
+        forecasts = await Http.GetFromJsonAsync<BookList[]>("http://127.0.0.1:8000/books?limit=100&offset=0");
+        StateHasChanged(); // Обновляем интерфейс
+    }
+    public class BookList
+    {
+        public int Id { get; set; }
+
+        public string? Title { get; set; }
+
+        public string? Author { get; set; }
+
+    }
+}

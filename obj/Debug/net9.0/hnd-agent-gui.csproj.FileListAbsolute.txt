@@ -199,8 +199,6 @@ E:\develope\csharp\hnd-agent-gui\bin\Debug\net9.0\wwwroot\_framework\dotnet.runt
 E:\develope\csharp\hnd-agent-gui\bin\Debug\net9.0\wwwroot\_framework\icudt_CJK.tjcz0u77k5.dat
 E:\develope\csharp\hnd-agent-gui\bin\Debug\net9.0\wwwroot\_framework\icudt_EFIGS.tptq2av103.dat
 E:\develope\csharp\hnd-agent-gui\bin\Debug\net9.0\wwwroot\_framework\icudt_no_CJK.lfu7j35m59.dat
-E:\develope\csharp\hnd-agent-gui\bin\Debug\net9.0\wwwroot\_framework\hnd-agent-gui.0nk74ere2x.wasm
-E:\develope\csharp\hnd-agent-gui\bin\Debug\net9.0\wwwroot\_framework\hnd-agent-gui.3dwz93l5fp.pdb
 E:\develope\csharp\hnd-agent-gui\bin\Debug\net9.0\wwwroot\_framework\blazor.boot.json
 E:\develope\csharp\hnd-agent-gui\bin\Debug\net9.0\wwwroot\_framework\blazor.webassembly.js.gz
 E:\develope\csharp\hnd-agent-gui\bin\Debug\net9.0\wwwroot\_framework\Microsoft.AspNetCore.Authorization.n7we7nbch1.wasm.gz
@@ -403,8 +401,6 @@ E:\develope\csharp\hnd-agent-gui\bin\Debug\net9.0\wwwroot\_framework\dotnet.runt
 E:\develope\csharp\hnd-agent-gui\bin\Debug\net9.0\wwwroot\_framework\icudt_CJK.tjcz0u77k5.dat.gz
 E:\develope\csharp\hnd-agent-gui\bin\Debug\net9.0\wwwroot\_framework\icudt_EFIGS.tptq2av103.dat.gz
 E:\develope\csharp\hnd-agent-gui\bin\Debug\net9.0\wwwroot\_framework\icudt_no_CJK.lfu7j35m59.dat.gz
-E:\develope\csharp\hnd-agent-gui\bin\Debug\net9.0\wwwroot\_framework\hnd-agent-gui.0nk74ere2x.wasm.gz
-E:\develope\csharp\hnd-agent-gui\bin\Debug\net9.0\wwwroot\_framework\hnd-agent-gui.3dwz93l5fp.pdb.gz
 E:\develope\csharp\hnd-agent-gui\bin\Debug\net9.0\wwwroot\_framework\blazor.boot.json.gz
 E:\develope\csharp\hnd-agent-gui\bin\Debug\net9.0\hnd-agent-gui.staticwebassets.runtime.json
 E:\develope\csharp\hnd-agent-gui\bin\Debug\net9.0\hnd-agent-gui.staticwebassets.endpoints.json
@@ -861,10 +857,7 @@ E:\develope\csharp\hnd-agent-gui\obj\Debug\net9.0\compressed\ny2tdwxo8i-29ty2d8h
 E:\develope\csharp\hnd-agent-gui\obj\Debug\net9.0\compressed\5zy8e5tacq-vp9urryha4.gz
 E:\develope\csharp\hnd-agent-gui\obj\Debug\net9.0\compressed\nimf7n89i8-63fj8s7r0e.gz
 E:\develope\csharp\hnd-agent-gui\obj\Debug\net9.0\compressed\fnenynfmrv-tdk74a876r.gz
-E:\develope\csharp\hnd-agent-gui\obj\Debug\net9.0\compressed\sfl8vahufp-iag0ou56lh.gz
 E:\develope\csharp\hnd-agent-gui\obj\Debug\net9.0\compressed\xjuwrs1em3-md9yvkcqlf.gz
-E:\develope\csharp\hnd-agent-gui\obj\Debug\net9.0\compressed\lywtcmjbql-pwpvjsr5vc.gz
-E:\develope\csharp\hnd-agent-gui\obj\Debug\net9.0\compressed\d0gu0t8x2s-pwpvjsr5vc.gz
 E:\develope\csharp\hnd-agent-gui\obj\Debug\net9.0\compressed\xfneyt2b9y-n7we7nbch1.gz
 E:\develope\csharp\hnd-agent-gui\obj\Debug\net9.0\compressed\nc787bfgxq-waskkzx0nn.gz
 E:\develope\csharp\hnd-agent-gui\obj\Debug\net9.0\compressed\zyfosv1cjz-nkegowssc4.gz
@@ -1065,9 +1058,6 @@ E:\develope\csharp\hnd-agent-gui\obj\Debug\net9.0\compressed\zsiqhospck-sw8h8rjm
 E:\develope\csharp\hnd-agent-gui\obj\Debug\net9.0\compressed\teaa52vvhc-tjcz0u77k5.gz
 E:\develope\csharp\hnd-agent-gui\obj\Debug\net9.0\compressed\5ymn6scip0-tptq2av103.gz
 E:\develope\csharp\hnd-agent-gui\obj\Debug\net9.0\compressed\gdtvf61d02-lfu7j35m59.gz
-E:\develope\csharp\hnd-agent-gui\obj\Debug\net9.0\compressed\nvua1rh2c7-0nk74ere2x.gz
-E:\develope\csharp\hnd-agent-gui\obj\Debug\net9.0\compressed\n0n8kive25-3dwz93l5fp.gz
-E:\develope\csharp\hnd-agent-gui\obj\Debug\net9.0\compressed\8w1e3mtobj-a1vsbq6c7n.gz
 E:\develope\csharp\hnd-agent-gui\obj\Debug\net9.0\staticwebassets.build.json
 E:\develope\csharp\hnd-agent-gui\obj\Debug\net9.0\staticwebassets.build.json.cache
 E:\develope\csharp\hnd-agent-gui\obj\Debug\net9.0\staticwebassets.development.json
@@ -1077,3 +1067,12 @@ E:\develope\csharp\hnd-agent-gui\obj\Debug\net9.0\hnd-agent-gui.dll
 E:\develope\csharp\hnd-agent-gui\obj\Debug\net9.0\refint\hnd-agent-gui.dll
 E:\develope\csharp\hnd-agent-gui\obj\Debug\net9.0\hnd-agent-gui.pdb
 E:\develope\csharp\hnd-agent-gui\obj\Debug\net9.0\ref\hnd-agent-gui.dll
+E:\develope\csharp\hnd-agent-gui\bin\Debug\net9.0\wwwroot\_framework\hnd-agent-gui.48hvarffoa.wasm
+E:\develope\csharp\hnd-agent-gui\bin\Debug\net9.0\wwwroot\_framework\hnd-agent-gui.1qywkzvyel.pdb
+E:\develope\csharp\hnd-agent-gui\bin\Debug\net9.0\wwwroot\_framework\hnd-agent-gui.48hvarffoa.wasm.gz
+E:\develope\csharp\hnd-agent-gui\bin\Debug\net9.0\wwwroot\_framework\hnd-agent-gui.1qywkzvyel.pdb.gz
+E:\develope\csharp\hnd-agent-gui\obj\Debug\net9.0\compressed\lywtcmjbql-ag7wc2ox7x.gz
+E:\develope\csharp\hnd-agent-gui\obj\Debug\net9.0\compressed\d0gu0t8x2s-ag7wc2ox7x.gz
+E:\develope\csharp\hnd-agent-gui\obj\Debug\net9.0\compressed\nvua1rh2c7-48hvarffoa.gz
+E:\develope\csharp\hnd-agent-gui\obj\Debug\net9.0\compressed\n0n8kive25-1qywkzvyel.gz
+E:\develope\csharp\hnd-agent-gui\obj\Debug\net9.0\compressed\8w1e3mtobj-ykf0q9gzlj.gz
