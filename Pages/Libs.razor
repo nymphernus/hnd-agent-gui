@@ -20,7 +20,9 @@ else
             <tr>
                 <th>ID книги</th>
                 <th aria-label="Title">Название книги</th>
+                <th aria-label="Title2">Редактор текста</th>
                 <th aria-label="Author">Автор</th>
+                <th aria-label="Author2">Редактор текста</th>
             </tr>
         </thead>
         <tbody>
@@ -29,14 +31,52 @@ else
                 <tr>
                     <td>@forecast.Id</td>
                     <td>@forecast.Title</td>
+                    <td><input type="text" @bind-value="@forecast.Title" @bind-value:event="oninput"/></td>
                     <td>@forecast.Author</td>
+                    <td><input type="text" @bind="@forecast.Title" @bind:event="oninput"/></td>
                 </tr>
             }
         </tbody>
     </table>
 }
+<div class="row border p-3">
+    <table class="table">
+                <tr>
+                    <td>@bkprop.Id</td>
+                    <td>@bkprop.Title</td>
+                    <td><input type="text" @bind-value="@bkprop.Title" @bind-value:event="oninput"/></td>
+                    <td>@bkprop.Author</td>
+                    <td><input type="text" @bind="@bkprop.Title" @bind:event="oninput"/></td>
+                    <td><select @bind="selectedProp">
+                        @foreach (var prop in bkprop.MyProp)
+                        {
+                            <option value="@prop.Key">@prop.Key</option>
+                        }
+                    </select></td>
+                        <td>    @selectedProp</td>
+                        @if(!String.IsNullOrWhiteSpace(selectedProp))
+                        {
+                            <td>    @bkprop.MyProp.FirstOrDefault(u=>u.Key==selectedProp).Value</td>
+                        }
+                </tr>
+    </table>
+</div>
 
 @code {
+    @* private Models.BookList[]? forecasts; *@
+
+    private string selectedProp = "";
+    private BookListProp bkprop = new(){
+        Id=1,
+        Title="Avtor",
+        Author="Kniga",
+        MyProp = new List<PropModel>()
+            {
+                new PropModel { Id=1,Key="color",Value="Black"},
+                new PropModel { Id=2,Key="flavor",Value="Rose Jasmine"},
+                new PropModel { Id=3,Key="size",Value="25cm"},
+            }
+    };
     private BookList[]? forecasts;
     private System.Threading.Timer? timer;
 
@@ -46,7 +86,7 @@ else
     }
     private void StartTimer()
     {
-        var refreshInterval = TimeSpan.FromSeconds(600); // интервал обновления каждые 600 секунд
+        var refreshInterval = TimeSpan.FromSeconds(0); // интервал обновления каждые 600 секунд
         timer = new Timer(async state =>
         {
             await InvokeAsync(() => RefreshDataAsync());

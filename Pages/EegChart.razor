@@ -1,0 +1,55 @@
+@page "/eegchart"
+@inject HttpClient Http
+@inject IJSRuntime JS
+
+<PageTitle>HND Agent</PageTitle>
+
+<h3>EEG Chart</h3>
+<div class="mb-3">
+    <button class="btn btn-primary" @onclick="RefreshEegAsync">Обновить данные</button>
+</div>
+
+
+
+@if (loading)
+{
+    <div class="load-label"><p>Загрузка данных...</p></div>
+}
+
+<div id="charts-container"></div>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="/js/eeg.js"></script>
+
+@code {
+    private bool loading = true;
+    private List<List<double>> signal = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        await RefreshEegAsync();
+    }
+
+    private async Task RefreshEegAsync()
+    {
+        try
+        {
+            loading = true;
+            var response = await Http.GetFromJsonAsync<EegData>("http://localhost:8000/eegdata");
+            if (response != null)
+            {
+                signal = response.Signal;
+                await JS.InvokeVoidAsync("drawEegChart", signal);
+            }
+            loading = false;
+            StateHasChanged();
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Ошибка загрузки данных: {ex.Message}");
+        }
+    }
+    public class EegData
+    {
+        public List<List<double>> Signal { get; set; } = new();
+    }
+}

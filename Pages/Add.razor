@@ -1,0 +1,29 @@
+﻿@page "/add"
+
+<PageTitle>HND Agent</PageTitle>
+
+<h1>Добавить</h1>
+
+<input type="text" @bind="@title" placeholder="Введите название книги" />
+<br/><br/>
+<input type="text" @bind="@author" placeholder="Введите автора книги" />
+<br/><br/>
+<button onclick="@SendBook">Отправить</button>
+
+@code {
+    private string title = "";
+    private string author = "";
+
+    private async Task SendBook()
+    {
+        var bookData = new Dictionary<string, object>()
+        {
+            { "title", title },
+            { "author", author }
+        };
+
+        using var httpClient = new HttpClient();
+        var response = await httpClient.PostAsJsonAsync("http://127.0.0.1:8000/books", bookData);
+
+    }
+}
