@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("hnd-agent-gui")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+289c88329ea08677335d749291f8ceeee52bd1cd")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a9b776a17fa57eaa1116f17c1293b87e865990fa")]
 [assembly: System.Reflection.AssemblyProductAttribute("hnd-agent-gui")]
 [assembly: System.Reflection.AssemblyTitleAttribute("hnd-agent-gui")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

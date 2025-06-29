@@ -1,3 +1,3 @@
 # hnd-agent-gui
 
-<code>dotnet run</code>
+<code>dotnet watch run</code>
